@@ -1,0 +1,541 @@
+*{
+
+   box-sizing: border-box;
+
+}
+
+   img{
+
+      width:100%;
+
+   }
+
+.container{
+
+	display: grid;
+
+	height: 50vh;
+
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+/*	grid-template-rows: 0.2fr 1.5fr 1.2fr .5fr 0.8fr .2fr;*/
+
+	grid-template-areas: 
+
+/*	"nav nav nav nav"*/
+
+   "page1 page1 page2 page2"
+
+	"page3 page3 page4 page4"
+
+   "page2text page3text page4text page5text"
+
+   "page5 page5 page6 page6"
+
+   "page7 page7 page8 page8"
+
+   "page9 page9 page10 page10"
+
+	"footer footer footer footer";
+
+	grid-gap: 0.2rem;
+
+	width: 100%;
+
+
+
+}
+
+/*main .nomad{
+
+	 background-image: url(../nomad/nomad2.svg);
+
+    size: 50%;
+
+    width: 100vw;
+
+    height: 100vh
+
+    background-repeat: no-repeat;
+
+}
+*/
+/*nav{
+
+   grid-area: nav;
+
+}*/
+
+
+
+.page1{
+   
+   grid-area: page1;
+   
+   
+}
+
+
+
+.page2{
+
+   grid-area:page2;
+
+}
+
+
+
+.page3{
+
+   grid-area:page3;
+
+}
+
+.page4{
+
+   grid-area:page4;
+}
+
+
+
+.page5{
+
+   grid-area: page5;
+
+}
+
+.page6{
+
+   grid-area: page6;
+
+}
+
+.page7{
+
+   grid-area: page7;
+
+}
+
+.page8{
+
+   grid-area: page8;
+
+}
+
+.page9{
+
+   grid-area: page9;
+
+}
+
+.page10{
+	grid-area: page10;
+}
+
+.page2text{
+
+   grid-area: page2text;
+
+}
+
+
+.page3text{
+
+   grid-area: page3text;
+
+}
+
+.page4text{
+
+   grid-area: page4text;
+
+}
+
+.page5text{
+
+   grid-area: nomad4btext;
+
+}
+
+a{
+   color:  white;
+   text-decoration: none;
+
+}
+
+#primarynav a{
+   border: solid;
+   border-color: white;
+   padding: 1em;
+   display: inline-block;
+   grid-area: nav;
+   background-color: #4880C7;
+   border-radius: 5%; 
+
+}
+#primarynav a + a{
+   margin-left: 1em;
+}
+
+
+#landing{
+	max-width: 20%;
+   margin-right: auto;
+}
+
+
+#primarynav a:hover{
+        background: purple;
+}
+
+#primarynav{
+   padding: 1em;
+  /* padding-right: 1em;
+   padding-left: 1em;*/
+  /* width: 50%;*/
+   background: #4880C7;
+}
+
+footer{
+
+   grid-area: footer;
+
+}
+
+body {
+
+
+
+	background: #84A2D5;
+
+   margin: 0;`
+
+   padding: 0;
+
+}
+
+
+/*
+nav{
+
+	background: #4880C7;
+
+	width: 100%;
+
+}*/
+
+
+img{
+
+	width: 100%;
+
+}
+
+
+
+
+
+
+footer{
+
+	background:;
+
+	grid-area: footer;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 830px){
+
+      .container{
+
+     /*    grid-template-rows: 100px 500px 500px 100px;*/
+
+         grid-template-columns: 1fr 1fr;
+
+         grid-template-areas: 
+
+        /* "nav nav"*/
+
+         "page1 page2"
+
+          "page3 page4"
+
+         "nomad2text nomad3text"
+
+          "page5 page6"
+
+         "nomad4text nomad4btext"
+
+         "page7 page8"
+
+         "page9 page10"
+
+         "footer footer";
+
+   }
+
+   	.page1{
+   
+   grid-area: page1;
+    
+}
+
+.page2{
+
+   grid-area:page2;
+
+}
+
+
+.page3{
+
+   grid-area:page3;
+
+}
+
+.page4{
+
+   grid-area:page4;
+}
+
+
+
+.page5{
+
+   grid-area: page5;
+
+}
+
+.page6{
+
+   grid-area: page6;
+
+}
+
+.page7{
+
+   grid-area: page7;
+
+}
+
+.page8{
+
+   grid-area: page8;
+
+}
+
+.page9{
+
+   grid-area: page9;
+
+}
+
+.page10{
+	grid-area: page10;
+}
+
+.page2text{
+
+   grid-area: page2text;
+
+}
+
+
+.page3text{
+
+   grid-area: page3text;
+
+}
+
+.page4text{
+
+   grid-area: page4text;
+
+}
+
+.page5text{
+
+   grid-area: nomad4btext;
+
+}
+   body{
+
+      background: #465C81;
+
+   }
+
+   img{
+
+      width:100%;
+
+   }
+
+/*   nav{
+
+      position: relative;
+
+   }
+*/
+}
+
+@media only screen and (max-width: 500px){
+
+	.container{
+
+		grid-template-columns: 1fr;
+
+		grid-template-areas: 
+
+		/*"nav"
+*/
+		"page1"
+
+      "page2"
+
+      "page2text"
+
+      "page3"
+
+      "nomad3text"
+
+      "page4"
+
+      "page4text"
+
+      "page5"
+
+      "page5text"
+
+      "page6"
+
+      "page7"
+
+      "page8"
+
+      "page9"
+
+      "page10"
+
+		"footer";
+
+}
+
+.page1{
+   
+   grid-area: page1;
+   
+   
+}
+
+
+
+.page2{
+
+   grid-area:page2;
+
+}
+
+
+
+.page3{
+
+   grid-area:page3;
+
+}
+
+.page4{
+
+   grid-area:page4;
+}
+
+
+
+.page5{
+
+   grid-area: page5;
+
+}
+
+.page6{
+
+   grid-area: page6;
+
+}
+
+.page7{
+
+   grid-area: page7;
+
+}
+
+.page8{
+
+   grid-area: page8;
+
+}
+
+.page9{
+
+   grid-area: page9;
+
+}
+
+.page10{
+	grid-area: page10;
+}
+
+.page2text{
+
+   grid-area: page2text;
+
+}
+
+
+.page3text{
+
+   grid-area: page3text;
+
+}
+
+.page4text{
+
+   grid-area: page4text;
+
+}
+
+.page5text{
+
+   grid-area: nomad4btext;
+
+}
+
+/*nav{
+
+   position: absolute;
+
+   border-width: 2px;
+
+   border: solid;
+
+   border-color: white;
+
+}*/
+body{
+
+      background: #1E293C;
+
+}
+
+img{
+
+   width: 100%;
+
+   position: relative;
+
+   }
+
+

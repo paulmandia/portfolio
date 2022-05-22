@@ -1,0 +1,137 @@
+
+   *{
+      box-sizing: border-box;
+   }
+
+   .container{
+   display: grid;
+   height: 50vh;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   /*grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;*/
+   grid-template-areas: 
+   "nav nav nav nav"
+   "main main main main"
+   "proj1img proj1img proj1text proj1text"
+   "footer footer footer footer";
+   grid-gap: 0.2rem;
+   width: 100%;
+
+}
+
+.firstimage{
+	grid-area: "proj1image";
+}
+.firsttext{
+	grid-area:"proj1text"; 
+}
+body {
+   background: #84A2D5;
+   margin: 0;
+   padding: 0;
+}
+.hero {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: ;
+}
+.hero::before {
+   content: "";
+   position: absolute;
+   top: 10%;
+   left: 50;
+   width: 75%;
+   height: 75%;
+   background-image: url(../logo/me.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   
+}
+
+a{
+   color:  white;
+   text-decoration: none;
+
+}
+
+#primarynav a{
+   border: solid;
+   border-color: white;
+   padding: 1em;
+   display: inline-block;
+   grid-area: nav;
+   background-color: #4880C7;
+   border-radius: 5%; 
+
+}
+#primarynav a + a{
+   margin-left: 1em;
+}
+
+
+#landing{
+   max-width: 20%;
+   margin-right: auto;
+}
+
+
+#primarynav a:hover{
+        background: purple;
+}
+
+#primarynav{
+   padding: 1em;
+  /* padding-right: 1em;
+   padding-left: 1em;*/
+  /* width: 50%;*/
+   background: #4880C7;
+}
+
+
+
+@media only screen and (max-width: 800px){
+   .container{grid-template-columns: 1fr;
+      grid-template-rows: 100px 500px 100px;
+      grid-template-areas: 
+      "nav nav"
+      "main main"
+      "footer footer";
+}
+body{
+   background: #465C81;
+}
+
+@media only screen and (max-width: 500px){
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 500px 100px;
+		grid-template-areas: 
+		"nav"
+		"main"
+		"footer";
+}
+main{
+ font-family: 'Yeseva One', cursive;
+ color: white;
+
+}
+
+
+h1 {
+      text-align: center;
+      font-size: 100px;
+      font-family: 'Delius', cursive;
+      color: white;
+}
+
+body{
+      background: #1E293C;
+}
+
+nav{
+   height: 25px;
+   max-width: 400px;
+}
