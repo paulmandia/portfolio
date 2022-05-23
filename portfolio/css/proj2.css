@@ -12,23 +12,20 @@
 
 .container{
 
+
 	display: grid;
-
-	height: 50vh;
-
+	
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 
-/*	grid-template-rows: 0.2fr 1.5fr 1.2fr .5fr 0.8fr .2fr;*/
+ /*	grid-template-rows: 0.2fr 1.5fr 1.2fr .5fr 0.8fr .2fr;*/
 
 	grid-template-areas: 
 
-/*	"nav nav nav nav"*/
+	"page2text page2text page2text page2text"
 
    "page1 page1 page2 page2"
 
 	"page3 page3 page4 page4"
-
-   "page2text page3text page4text page5text"
 
    "page5 page5 page6 page6"
 
@@ -42,9 +39,27 @@
 
 	width: 100%;
 
+	margin-top: 0.2em;
+
 
 
 }
+
+.page2text{
+	grid-area: page2text;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 25em;
+	font-family: 'Delius', cursive;
+	border: solid;
+   border-color: white;
+   padding: 1em;
+   background-color: #4880C7;
+   border-radius: 10%;
+   width: 50%;
+   width: 50%;
+
+  }
 
 
 .page1{
@@ -59,7 +74,7 @@
 .page2{
 
    grid-area:page2;
-
+   
 }
 
 
@@ -80,6 +95,7 @@
 .page5{
 
    grid-area: page5;
+  
 
 }
 
@@ -110,28 +126,6 @@
 
 
 
-.page2text{
-
-   grid-area: page2text;
-
-}
-
-
-.page3text{
-
-   grid-area: page3text;
-
-}
-
-.page4text{
-
-   grid-area: page4text;
-
-}
-
-.page5text{
-
-   grid-area: nomad4btext;
 
 }
 
@@ -141,20 +135,19 @@ a{
 
 }
 
-a{
-   color:  white;
-   text-decoration: none;
-
-}
 
 #primarynav a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Yeseva One', cursive;
    border: solid;
    border-color: white;
    padding: 1em;
    display: inline-block;
    grid-area: nav;
    background-color: #4880C7;
-   border-radius: 5%; 
+   border-radius: 25%; 
+
 
 }
 
@@ -170,7 +163,7 @@ a{
 
 
 #primarynav a:hover{
-        background: purple;
+        background: #465C81;
 }
 
 #primarynav{
@@ -223,15 +216,11 @@ nav{
 	background: #4880C7;
 
 	width: 100%;
-
-}*/
-
-
-img{
-	
-	width: 100%;
-
+*/
 }
+
+
+
 
 
 footer{
@@ -277,11 +266,6 @@ footer{
 
    }
 
-   img{
-
-      width:100%;
-
-   }
 
 /*   nav{
 
@@ -322,6 +306,8 @@ footer{
       "nomad5"
 
 		"footer";
+
+		width: 100;
 
 }
 

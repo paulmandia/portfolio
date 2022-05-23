@@ -14,64 +14,38 @@
 
 	display: grid;
 
-	height: 50vh;
-
-	grid-template-columns: 2fr 2fr 2fr 2fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 
 /*	grid-template-rows: 0.2fr 1.5fr 1.2fr .5fr 0.8fr .2fr;*/
 
 	grid-template-areas: 
 
-/*	"nav nav nav nav"*/
-
    "nomad6 nomad6 nomad6 nomad6"
-
-	"nomad2 nomad3 nomad4 nomad4b"
 
    "nomad2text nomad3text nomad4text nomad4btext"
 
-   "nomad5 nomad5 nomad5 nomad5"
+	"nomad2 nomad2 nomad4 nomad4"
+
+   "nomad3 nomad3 nomad3 nomad3"
+
+   "nomad4b nomad4b nomad5 nomad5"
 
 	"footer footer footer footer";
 
-	grid-gap: 0.2rem;
+   grid-gap: 0.2rem;
 
-	width: 100%;
+   width: 100%;
 
-
-
-}
-
-/*main .nomad{
-
-	 background-image: url(../nomad/nomad2.svg);
-
-    size: 50%;
-
-    width: 100vw;
-
-    height: 100vh
-
-    background-repeat: no-repeat;*/
+   margin-top: 0.2em;
 
 
-
-	
-
-
+   
 
 }
-/*
-nav{
-
-   grid-area: nav;
-
-}*/
 
 .nomad6{
    grid-area: nomad6;
-
-   
+   width: 100%;
 }
 
 
@@ -164,7 +138,7 @@ a{
 
 
 #primarynav a:hover{
-        background: purple;
+        background: #465C81;
 }
 
 #primarynav{
@@ -176,12 +150,6 @@ a{
 }
 
 
-footer{
-
-   grid-area: footer;
-
-}
-
 body {
 
 
@@ -191,6 +159,11 @@ body {
    margin: 0;`
 
    padding: 0;
+
+}
+footer{
+
+   grid-area: footer;
 
 }
 
@@ -252,12 +225,12 @@ nav{
 
 }*/
 
-
+/*
 img{
 
 	width: 100%;
 
-}
+}*/
 
 
 
@@ -301,6 +274,17 @@ footer{
          "nomad5 nomad5"
 
          "footer footer";
+
+         grid-gap: 0.2rem;
+
+         width: 100%;
+
+         margin-top: 0.2em;
+ 
+        margin-left: 0.2;
+
+        margin-right: 0.2em;
+
 
    }
 

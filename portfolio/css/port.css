@@ -18,6 +18,10 @@
 
 }
 
+img{
+    object-fit: cover;
+}
+
 .firstimage{
 	grid-area: "proj1image";
 }
@@ -79,7 +83,7 @@ a{
 
 
 #primarynav a:hover{
-        background: purple;
+        background: #465C81;
 }
 
 #primarynav{
